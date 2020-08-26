@@ -149,17 +149,18 @@ display: none;
 .rightbutton:hover{
     opacity: 0.8;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
     .container{
         visibility: hidden;
     }
+  .slide1 {
+    display: none; 
+  }
 }
 .slide1 {
     display: flex;
     width: 100%;
     height: 500px;
-    animation-name: fade;
-    animation-duration: 4s;
 }
  ol {
     counter-reset: li;
@@ -172,7 +173,7 @@ display: none;
     padding-left: 15px;
 }
 
-.rounded-list p{
+.rounded-list p {
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
@@ -181,7 +182,7 @@ display: none;
     border-radius: .3em;
   }
 
-  .rounded-list p:before{
+  .rounded-list p:before {
     content: counter(li);
     counter-increment: li;
     position: absolute;
